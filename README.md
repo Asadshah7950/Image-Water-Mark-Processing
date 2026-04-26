@@ -87,7 +87,7 @@ sudo apt-get install build-essential libopenmpi-dev openmpi-bin
 sudo apt-get install libpng-dev libjpeg-dev nvidia-cuda-toolkit
 
 # Clone repository
-git clone https://github.com/yourusername/image-watermarking-mpi-cuda.git
+git clone https://github.com/Asadshah7950/image-watermarking-mpi-cuda.git
 cd image-watermarking-mpi-cuda
 
 # Install Python packages
@@ -249,7 +249,7 @@ This project is licensed under the MIT License - see below for details:
 ```
 MIT License
 
-Copyright (c) 2026 [Your Name]
+Copyright (c) 2026 [Asad Ali Shah]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -281,8 +281,7 @@ SOFTWARE.
 ## 📧 Contact
 
 For questions or suggestions, please open an issue or contact:
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
+- **GitHub**: [@Asadshah7950](https://github.com/Asadshah7950)
 
 ## 🎓 Academic Use
 
