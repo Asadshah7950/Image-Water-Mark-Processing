@@ -1,4 +1,4 @@
-# 🎨 Image Watermarking System with MPI + CUDA
+﻿# ðŸŽ¨ Image Watermarking System with MPI + CUDA
 
 An interactive image watermarking system that leverages parallel processing using **MPI (Message Passing Interface)** and **CUDA** for high-performance watermark embedding and extraction on Google Colab.
 
@@ -6,7 +6,7 @@ An interactive image watermarking system that leverages parallel processing usin
 [![CUDA](https://img.shields.io/badge/CUDA-Enabled-green.svg)](https://developer.nvidia.com/cuda-zone)
 [![MPI](https://img.shields.io/badge/MPI-OpenMPI-blue.svg)](https://www.open-mpi.org/)
 
-## 📋 Table of Contents
+## ðŸ“‹ Table of Contents
 - [Features](#-features)
 - [Technologies](#-technologies)
 - [How It Works](#-how-it-works)
@@ -19,18 +19,18 @@ An interactive image watermarking system that leverages parallel processing usin
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## ✨ Features
+## âœ¨ Features
 
-- **🚀 Parallel Processing**: Utilizes MPI for distributed computing across multiple processes
-- **⚡ GPU Acceleration**: CUDA kernels for high-performance watermark operations
-- **🎯 LSB Watermarking**: Implements Least Significant Bit (LSB) embedding technique
-- **🔍 Watermark Verification**: Extract and verify embedded watermarks
-- **📊 Similarity Analysis**: Calculate image similarity and PSNR metrics
-- **🎨 Interactive Interface**: User-friendly menu-driven system
-- **📥 File Management**: Easy upload and download functionality in Colab
-- **🔄 Flexible Processing**: Choose between GPU or CPU processing modes
+- **ðŸš€ Parallel Processing**: Utilizes MPI for distributed computing across multiple processes
+- **âš¡ GPU Acceleration**: CUDA kernels for high-performance watermark operations
+- **ðŸŽ¯ LSB Watermarking**: Implements Least Significant Bit (LSB) embedding technique
+- **ðŸ” Watermark Verification**: Extract and verify embedded watermarks
+- **ðŸ“Š Similarity Analysis**: Calculate image similarity and PSNR metrics
+- **ðŸŽ¨ Interactive Interface**: User-friendly menu-driven system
+- **ðŸ“¥ File Management**: Easy upload and download functionality in Colab
+- **ðŸ”„ Flexible Processing**: Choose between GPU or CPU processing modes
 
-## 🛠 Technologies
+## ðŸ›  Technologies
 
 - **CUDA C/C++**: GPU kernel programming
 - **MPI (OpenMPI)**: Distributed parallel computing
@@ -43,7 +43,7 @@ An interactive image watermarking system that leverages parallel processing usin
   - PIL/Pillow (Image processing)
   - Google Colab (Cloud execution environment)
 
-## 🔬 How It Works
+## ðŸ”¬ How It Works
 
 ### Watermark Embedding
 1. **Image Distribution**: MPI divides the image into rows across multiple processes
@@ -61,7 +61,7 @@ An interactive image watermarking system that leverages parallel processing usin
 - **PSNR**: Peak Signal-to-Noise Ratio for quality assessment
 - **Watermark Matching**: Pixel-by-pixel comparison for verification
 
-## 📦 Installation
+## ðŸ“¦ Installation
 
 ### For Google Colab (Recommended)
 
@@ -71,7 +71,7 @@ An interactive image watermarking system that leverages parallel processing usin
 
 2. **Enable GPU**:
    ```
-   Runtime → Change runtime type → Hardware accelerator → GPU (T4)
+   Runtime â†’ Change runtime type â†’ Hardware accelerator â†’ GPU (T4)
    ```
 
 3. **Run the Setup**:
@@ -94,17 +94,17 @@ cd image-watermarking-mpi-cuda
 pip install numpy matplotlib pillow
 ```
 
-## 🚀 Usage
+## ðŸš€ Usage
 
 ### Running in Google Colab
 
 1. **Execute the main cell** to start the interactive menu
 2. **Choose an operation**:
-   - `1️⃣` - Compare similarity between two images
-   - `2️⃣` - Embed watermark into an image
-   - `3️⃣` - Verify watermark presence
-   - `4️⃣` - Extract watermark from image
-   - `5️⃣` - Exit program
+   - `1ï¸âƒ£` - Compare similarity between two images
+   - `2ï¸âƒ£` - Embed watermark into an image
+   - `3ï¸âƒ£` - Verify watermark presence
+   - `4ï¸âƒ£` - Extract watermark from image
+   - `5ï¸âƒ£` - Exit program
 
 3. **Upload files** when prompted
 4. **Select processing mode** (GPU/CPU)
@@ -130,31 +130,31 @@ mpirun -np 1 bin/watermark check watermarked.png logo.png gpu
 mpirun -np 2 bin/watermark similarity image1.png image2.png
 ```
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 PDC_Semester_Project/
-├── PDC_Semester_Project.ipynb    # Main Jupyter notebook
-├── README.md                      # This file
-├── include/
-│   ├── watermark.h               # Header file with function declarations
-│   ├── stb_image.h               # Image loading library
-│   └── stb_image_write.h         # Image writing library
-├── src/
-│   ├── main.c                    # MPI main program
-│   ├── image_utils.c             # Image I/O and utilities
-│   ├── watermark_cuda.cu         # CUDA kernels
-│   └── watermark_cpu.c           # CPU implementation
-├── Makefile                      # Build configuration
-├── uploads/                      # Uploaded images
-├── results/                      # Output images
-│   ├── watermarked_image.png
-│   └── extracted_watermark.png
-└── bin/
-    └── watermark                 # Compiled executable
+â”œâ”€â”€ PDC_Semester_Project.ipynb    # Main Jupyter notebook
+â”œâ”€â”€ README.md                      # This file
+â”œâ”€â”€ include/
+â”‚   â”œâ”€â”€ watermark.h               # Header file with function declarations
+â”‚   â”œâ”€â”€ stb_image.h               # Image loading library
+â”‚   â””â”€â”€ stb_image_write.h         # Image writing library
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ main.c                    # MPI main program
+â”‚   â”œâ”€â”€ image_utils.c             # Image I/O and utilities
+â”‚   â”œâ”€â”€ watermark_cuda.cu         # CUDA kernels
+â”‚   â””â”€â”€ watermark_cpu.c           # CPU implementation
+â”œâ”€â”€ Makefile                      # Build configuration
+â”œâ”€â”€ uploads/                      # Uploaded images
+â”œâ”€â”€ results/                      # Output images
+â”‚   â”œâ”€â”€ watermarked_image.png
+â”‚   â””â”€â”€ extracted_watermark.png
+â””â”€â”€ bin/
+    â””â”€â”€ watermark                 # Compiled executable
 ```
 
-## 🔧 Implementation Details
+## ðŸ”§ Implementation Details
 
 ### CUDA Kernels
 
@@ -188,11 +188,11 @@ __global__ void extract_lsb_kernel(unsigned char *img, unsigned char *wm,
 ### LSB Watermarking Algorithm
 
 1. **Watermark Scaling**: Logo resized to 1/4 of image dimensions
-2. **Bit Mapping**: Binary conversion (>128 → 1, ≤128 → 0)
+2. **Bit Mapping**: Binary conversion (>128 â†’ 1, â‰¤128 â†’ 0)
 3. **Embedding**: Set/clear LSB in all RGB channels
 4. **Extraction**: Reconstruct from LSB with majority voting
 
-## ⚡ Performance
+## âš¡ Performance
 
 ### Speedup Metrics
 
@@ -212,7 +212,7 @@ __global__ void extract_lsb_kernel(unsigned char *img, unsigned char *wm,
 - **Async Operations**: Overlapped computation and communication
 - **Load Balancing**: Dynamic work distribution across MPI processes
 
-## 📸 Examples
+## ðŸ“¸ Examples
 
 ### Embedding Watermark
 ```python
@@ -222,11 +222,11 @@ __global__ void extract_lsb_kernel(unsigned char *img, unsigned char *wm,
 ```
 
 ### Verification Results
-- ✅ **>90% similarity**: Watermark verified
-- ⚠️ **70-90% similarity**: Possible match
-- ❌ **<70% similarity**: No watermark detected
+- âœ… **>90% similarity**: Watermark verified
+- âš ï¸ **70-90% similarity**: Possible match
+- âŒ **<70% similarity**: No watermark detected
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -242,7 +242,7 @@ Contributions are welcome! Please follow these steps:
 - Test on both CPU and GPU modes
 - Verify MPI compatibility with different process counts
 
-## 📄 License
+## ðŸ“„ License
 
 This project is licensed under the MIT License - see below for details:
 
@@ -270,7 +270,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🙏 Acknowledgments
+## ðŸ™ Acknowledgments
 
 - **STB Libraries**: Sean Barrett for image I/O libraries
 - **Google Colab**: Free GPU access for development
@@ -278,12 +278,12 @@ SOFTWARE.
 - **OpenMPI**: Message Passing Interface implementation
 - **PDC Course**: Parallel and Distributed Computing coursework
 
-## 📧 Contact
+## ðŸ“§ Contact
 
 For questions or suggestions, please open an issue or contact:
 - **GitHub**: [@Asadshah7950](https://github.com/Asadshah7950)
 
-## 🎓 Academic Use
+## ðŸŽ“ Academic Use
 
 This project was developed as part of a Parallel and Distributed Computing (PDC) semester project. It demonstrates:
 - MPI for distributed computing
@@ -294,8 +294,12 @@ This project was developed as part of a Parallel and Distributed Computing (PDC)
 
 ---
 
-⭐ **Star this repository** if you found it helpful!
+â­ **Star this repository** if you found it helpful!
 
-🐛 **Report issues** to help improve the project!
+ðŸ› **Report issues** to help improve the project!
 
-🔄 **Fork and contribute** to add new features!
+ðŸ”„ **Fork and contribute** to add new features!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
