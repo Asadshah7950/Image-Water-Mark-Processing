@@ -27,3 +27,7 @@ jobs:
       - name: Verify build artifacts
         run: |
           ls -la bin/
+
+      - name: Run Python batch pipeline tests
+        run: python3 -m unittest test/test_pipeline.py
+
