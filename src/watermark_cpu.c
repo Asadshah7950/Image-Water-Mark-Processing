@@ -1,5 +1,5 @@
-#include <stdio. h>
-#include <stdlib. h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "../include/watermark.h"
 
 void embed_watermark_cpu(Image *img, Watermark *wm, Config *cfg, int start_row, int end_row) {
